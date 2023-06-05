@@ -1,0 +1,86 @@
+.grid-box {
+    width: 90%;
+    min-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.innerbox {
+    width: 50%;
+    min-height: 500px;
+    padding: 50px;
+}
+
+.innerbox > p {
+    font-size: 25px;
+}
+
+.innerbox > h2 {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid rgba(127,19,39,1);
+    margin-bottom: 20px;
+}
+
+.imagebox1 {
+    background-image: url("../images/historie1.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: scroll;
+    border-top-right-radius: 5px;
+}
+
+.imagebox2 {
+    background-image: url("../images/historie2.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.imagebox3 {
+    background-image: url("../images/historie3.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: scroll;
+    border-bottom-right-radius: 5px;
+}
+
+.grid-box:first-child > .innerbox:first-child {
+    border-top-left-radius: 5px;
+}
+
+.grid-box:last-child > .innerbox:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .grid-box {
+        display: block;
+    }
+
+    .innerbox {
+        width: 100%;
+    }
+
+    .grid-box:first-child > .innerbox:first-child {
+        border-top-right-radius: 5px;
+    }
+
+    .imagebox1 {
+        border-top-right-radius: 0;
+    }
+
+    .grid-box:last-child > .innerbox:first-child {
+        border-bottom-left-radius: 0;
+    }
+
+    .imagebox3 {
+        border-bottom-left-radius: 5px;
+    }
+    
+}

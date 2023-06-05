@@ -1,0 +1,165 @@
+.content {
+    width: 100%;
+    display: flex;
+}
+
+.navmenu {
+    width: 220px;
+    display: flex;
+    align-items: end;
+}
+
+aside {
+    width: 230px;
+    min-height: 500px;
+    border-right: 1px solid rgba(127,19,39,1);
+    display: grid;
+    align-items: end;
+}
+
+aside > p {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(127,19,39,1);
+    color: #FFF;
+    padding: 5px;
+}
+
+aside > a {
+    padding: 6px;
+    font-size: 16px;
+    color: rgba(127,19,39,1);
+    transition: 0.2s ease-in-out;
+}
+
+aside > a:hover {
+    color: #FFF;
+    background-color: gray;
+}
+
+.serviceactive {
+    background-color: gray;
+    color: #FFF;
+    cursor: default;
+}
+
+.service-box {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+}
+
+.service-box > div {
+    width: 50%;
+    min-height: 300px;
+    padding: 25px;
+}
+
+.service-box > div > h2 {
+    font-size: 30px;
+    border-bottom: 1px solid rgba(127,19,39,1);
+    margin-bottom: 10px;
+}
+
+.service-box > div > p {
+    font-size: 20px;
+}
+
+.contact-text {
+    margin-top: 50px;
+}
+
+.contact-text > a {
+    color: rgba(127,19,39,1);
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+.contact-text > a:hover {
+    color: gray;
+}
+
+.divider {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(127,19,39,1);
+}
+
+.service-images {
+    width: 90%;
+    min-height: 700px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.service-images > img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 5px 10px 10px gray;
+}
+
+.image-hover2:hover {
+    width: 500px;
+    height: auto;
+}
+
+.image-hover1:hover, .image-hover3:hover {
+    width: 600px;
+    height: auto;
+}
+
+.video {
+    border-radius: 5px;
+    width: 100%;
+    height: 400px;
+}
+
+.boldtext {
+    font-weight: bold;
+}
+
+.box-shadow {
+    box-shadow: 5px 10px 10px gray;
+}
+
+.fulltext-box {
+    width: 100% !important;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .service-box {
+        display: block;
+    }
+
+    .service-box > div {
+        width: 100%;
+    }
+
+    .service-images {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service-images > img {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .service-images > img:hover {
+        width: 300px;
+        height: auto;
+    }
+
+    .video {
+        height: 200px;
+    }
+    
+}
